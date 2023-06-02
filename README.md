@@ -1,4 +1,4 @@
-# C++ & Pybind11 - Call Python Functions via C++ 
+# C++ and Pybind11 - Call Python Functions via C++ 
 ## Introduction
 This repository contains starter code in C++ to utilize [Pybind11](https://pybind11.readthedocs.io/en/stable/), a library allowing developers to call Python functions and objects, as well as load the Python interpreter all from C++. Pybind11 is built on the [Python/C API](https://docs.python.org/3/c-api/index.html), the official documentation to expose Python and C libraries to each other.
 
