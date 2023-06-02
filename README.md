@@ -1,24 +1,24 @@
 # C++ & Pybind11 - Call Python Functions via C++ 
-### Introduction
+## Introduction
 This repository contains starter code in C++ to utilize [Pybind11](https://pybind11.readthedocs.io/en/stable/), a library allowing developers to call Python functions and objects, as well as load the Python interpreter all from C++. Pybind11 is built on the [Python/C API](https://docs.python.org/3/c-api/index.html), the official documentation to expose Python and C libraries to each other.
 
-### Project Structure
+## Project Structure
 In **main.cpp**, one will find starter code to run a Python function to print a simple "Hello World!" into the console. In **numpy.cpp**, one will find starter code to run a Python function importing the Numpy library and loading a Numpy array as a Python object. 
-
-### Installation 
-You can find official installation instructions for Pybind11 and MacOS [here](https://pybind11.readthedocs.io/en/stable/installing.html)
-
-In a nutshell, you will need to have C++, CMake, Python3, and Numpy installed to run the following code. Documentation on testing Pybind11 installation on Windows and Mac can be found [here](https://pybind11.readthedocs.io/en/stable/basics.html). Some tips per Operating System are given below.
-
-### Build & Execution
-
-Follow these steps to build and run your C++ project with Pybind11:
 
 ## Prerequisites
 
 - Make sure Python and its headers are properly installed.
 - Ensure the `numpy` Python library is installed. You can install it using pip: `pip install numpy`.
-- Your project directory should contain the `pybind11` library in a subdirectory. If not, clone it from the Pybind11 GitHub repository: `git clone https://github.com/pybind/pybind11.git`.
+- Your project directory should contain the `pybind11` library in a subdirectory. If not, clone it from the Pybind11 GitHub repository: `git clone https://github.com/pybind/pybind11.git`. (CLONE THIS REPO CPP-PYTHON, and then clone the Pybind11 repo into our repo to build it).
+
+## Installation 
+You can find official installation instructions for Pybind11 and MacOS [here](https://pybind11.readthedocs.io/en/stable/installing.html)
+
+In a nutshell, you will need to have C++, CMake, Python3, and Numpy installed to run the following code. Documentation on testing Pybind11 installation on Windows and Mac can be found [here](https://pybind11.readthedocs.io/en/stable/basics.html). Some tips per Operating System are given below.
+
+## Build & Execution
+
+Follow these steps to build and run your C++ project with Pybind11:
 
 ## Building the Project
 
@@ -79,7 +79,7 @@ Finally, if you're using a different Python environment (e.g., an Anaconda envir
 
 Replace `$(which python)` with the path to your preferred Python interpreter if it's not the one that's used when you run which python in your shell.
 
-### Installation Tips & Bugs (MacOS)
+## Installation Tips & Bugs (MacOS)
 If you run into an error similar to 
 ```[cmake]   Imported target "pybind11::embed" includes non-existent path
 [cmake] 
@@ -155,7 +155,7 @@ python3 --version
 ```
 If everything is set up correctly, you should now have a working Python environment on MacOS with the necessary headers for Pybind11. If you still encounter issues, make sure your project's CMakeLists.txt file correctly sets up Pybind11 and Python.
 
-### Installation (Windows)
+## Installation (Windows)
 You can find official installation instructions for Pybind11 and Windows [here](https://pybind11.readthedocs.io/en/stable/installing.html) and [here](https://pybind11.readthedocs.io/en/stable/basics.html).
 
 If you are having trouble locating Python header files, please reference the above installation tips for MacOS.
